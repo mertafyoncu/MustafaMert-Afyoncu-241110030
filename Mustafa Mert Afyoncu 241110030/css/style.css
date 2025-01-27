@@ -1,0 +1,249 @@
+/* Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Stilleri */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Ürün Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .product-grid {
+        gap: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Blog Sayfası Stilleri */
+.blog-section {
+    padding: 2rem 5%;
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Ürünler Sayfası Ek Stilleri */
+.products-section {
+    padding: 2rem 5%;
+}
+
+.product-card .description {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #28a745;
+    margin: 0.5rem 0;
+}
+
+/* Hakkımızda Sayfası Stilleri */
+.about-section {
+    padding: 2rem 5%;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.about-image {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive tasarım için ek medya sorgusu */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .stats-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+} 
